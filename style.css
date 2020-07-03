@@ -1,0 +1,136 @@
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{
+            border: 2px solid black;
+            /* box-shadow: black 2px 2px; */
+            padding: 10px;
+            width: 520px;
+            margin: 10px 20px;
+        }
+        
+        h2{
+            font-size: 24px;
+            padding-bottom: 10px;
+        }
+        .pic{
+           
+            padding-right: 10px;
+        }
+        .pic img{
+            border-radius: 50%;
+            
+        }
+        p{
+            font-size: 16px;
+        }
+        .sample1 .pic{
+            vertical-align: top;
+        }
+        .sample2 .pic{
+            width: 40px;
+            box-sizing: border-box;
+            float: left;
+        }
+        .sample2 .text{
+            box-sizing: border-box;
+            float: left;
+            width: 460px;
+        }
+        .sample2::after{
+            content: " ";
+            display: block;
+            clear: both;
+        }
+      
+        .sample3 .pic{
+            width: 40px;
+            box-sizing: border-box;
+            float: left;
+        }
+        .sample3 .text{
+            margin-left: 40px;
+            background-color:#aaa;
+        } 
+        .sample4{
+            display: flex;
+        }
+
+        .sample5 .pic{
+            box-sizing: border-box;
+            width: 40px;
+            float: left;
+        }
+        .sample5 .text{
+            overflow: auto;
+            background-color: #aaa;
+        }
+
+        .sample6{
+            position: relative;
+            height: 300px;
+        }
+        .sample6 .pic{
+            position: absolute;
+        }
+        .sample6 .text{
+            position: absolute;
+            left: 50px;
+        }
+
+    
+        .sample7 img{
+            border-radius: 50%;
+            margin-right: 10px;
+            vertical-align: middle;
+            
+        }
+        .sample7 h2{
+            padding-left: 40px;
+            text-indent: -40px;
+        }
+        .sample7 p{
+            padding-left: 40px;
+        }
+
+        .sample8 p{
+            padding-left: 40px;
+        }
+        .sample8 h2{
+            background: url('https://picsum.photos/seed/picsum/30/30') no-repeat;
+            padding-left: 40px;
+        }
+
+        .sample9{
+            padding-left: 50px;
+           
+        }
+        .sample9 img{
+            border-radius: 50%;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .sample9 h2{
+            text-indent: -40px;
+        }
+
+        .sample10{
+            display: grid;
+            grid-auto-rows: auto auto;
+            grid-auto-columns: 50px 1fr;
+            grid-template-areas: 
+                "im h2"
+                ". txt";
+            
+        }
+        .sample10 img{
+            grid-area: im;
+            vertical-align: bottom;
+        }
+        .sample10 h2{
+            grid-area: h2;
+        }
+        .sample10 p{
+            grid-area: txt;
+        }
